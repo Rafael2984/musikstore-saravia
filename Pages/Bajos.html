@@ -5,73 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../Css/main.css">
     <title>Bajos</title>
 
-    <img src="logoms.png" width="150" alt="logo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
 
 </head>
 <body>
 
+    <h1 class="text-center bg-light"> Music Store </h1>
     <!--Este es mi Navegador-->
-<header>
-
-    <h1> Music Store </h1>
-    <nav>
-
-        <li>
-            <a href="../index.html">Home</a> 
-        </li>
     
-        <li> <a href="Guitarras.html">Guitarras</a>
-        </li>
+    <header class="d-flex flex-wrap justify-content-center  mb-4 border-bottom bg-transparent">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4 "><img src="logoms.png" alt="Logo" width="80"></span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="../index.html"  aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="Guitarras.html" class="nav-link">Guitarras</a></li>
+          <li class="nav-item"><a href="Acusitcas.html" class="nav-link">Acusticas</a></li>
+          <li class="nav-item"><a href="Bajos.html" class="nav-link">Bajos</a></li>
+          
+        </ul>
+      </header>
     
-        <li>
-            <a href="Acusitcas.html">Acusticas</a>
-        </li>
+    <main>
+
     
-        <li> 
-            <a href="Bajos.html">Bajos</a>
-        </li>
+        
+        <div id="tarjetas"> 
 
-    </nav>
-    
-</header>
-    
-        <main>
 
-            
-    <h2 class="caracterisicas">Caracteristcas de Instrumentos</h2>
+          <div class="card col-lg-3" style="width: 18rem;">
+            <img src="fenderprecision.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fender Precision</h5>
+              <p class="card-text">clásico elegante diseñado para el bajista que aprecia el estilo elegante y el tono muscular. Edición especial con tapa para la cabeza a juego y un golpeador negro único.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
 
-    <img src="fender-american-elite-jazz-bass-v-nat_1.jpg" width="250" alt="">
+          <div class="card col-lg-3" style="width: 18rem;">
+            <img src="ibanezbajo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ibanez Gio</h5>
+              <p class="card-text">Ibanez gio es un bajo practico, se acomoda a la comodidad del usuario, buena sonido graves intensos, equalizador practico de tres bandas.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
 
-    <div id="parrafo">
-        <p> El Geddy Lee Jazz Bass es una réplica exacta del instrumento tonalmente singular que el venerado bajista / vocalista de Rush ha tocado frente a millones de devotos fanáticos en todo el mundo y en muchos álbumes de gran venta. Lee sigue siendo un bajista aclamado y enormemente influyente y, con un paso mezquino y mezquino, su modelo de firma más vendido y de estilo elegante hace que su tono crezca con vida y se erice con la energía, con graves masivos, rango medio gutural y agudos cristalinos.</p>
+          <div class="card col-lg-3" style="width: 18rem;">
+            <img src="spector.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spector Euro</h5>
+              <p class="card-text">El bajo Spector Euro es uno de los mas altos de la gama de la linea spector, su acabado en una sola pieza le da un estilo unico, cuenta con circuito activo. </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+
+
+        </div>
+                  
+
+                  
+
+
+
+
+
+        </div>
+
     </div>
-    
+    <button type="button" class="mt-5 mx-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Click Me</button>
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Los mejores descuentos</h5>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+    </div>
+     
 
-    <div id="tabla2">
 
-        <div class="marcas">Marca</div>
-        <div class="gamma">Gamma</div>
-        <div class="trastes">Cantidad de trastes</div>
-        <div class="madera">Madera</div>
-        <div class="precio">Precio</div>
-        <div class="fender">ibanez</div>
-        <div class="gamma">Tope de gama</div>
-        <div class="cantidad">24</div>
-        <div class="bubinga">pino</div>
-        <div class="valor">30000pesos</div>
-    
-    
-    <h2>Escucha como suena</h2>
+                  
+           
+            <table class="table text-light">
+                <thead>
+                  <tr>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Gamma</th>
+                    <th scope="col">Cantidad de Trastes</th>
+                    <th scope="col">Madera</th>
+                  
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Fender</th>
+                    <td>Tope de Gama</td>
+                    <td>24</td>
+                    <td>Bubinga</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
 
-<audio src="bajo.mp3" controls></audio>
+              <div id="sonido">
+            
+                <h2>Escucha como suena</h2>
+            
+                <audio src="bajo.mp3" controls></audio>
+            
+            </div>
+                
+            
+            </div> 
+    </main>
 
-        </main>
-    
 <footer>
-
     <div id="dondecontrarnos">
         <h2>Donde encontrarnos</h2>
     
@@ -96,8 +160,15 @@
     <a href="https://www.twitter.com" target="blank"> <img src="tiwtter.png" alt="twitter">
     </a>
     
-    </div>
+    
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
 
 </body>
 </html>

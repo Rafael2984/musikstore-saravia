@@ -75,6 +75,14 @@ a {
     background-color:rgba(204, 204, 204, 0.5) ;
 }
 
+#banner img {
+
+    width: auto;
+    height: auto;
+    max-height: 70em;
+    max-width: 132em;
+}
+
 #marcas h2 {
     padding: 10px;
     display: flex;
@@ -138,8 +146,8 @@ p {
 }
 
 
-#dondecontrarnos {
-
+#dondecontrarnos iframe {
+display: flex;
 background-color: rgba(204, 204, 204, 0.5);
 }
 
@@ -265,3 +273,22 @@ h2 {
     border: solid 3px; 
 
 }
+
+
+#tarjetas {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+  
+    
+    }
+
+    @media screen and(max-width:800px) {
+        body {
+            background: #ff8000;
+        }
+        
+    }
