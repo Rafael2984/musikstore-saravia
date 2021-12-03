@@ -1,0 +1,37 @@
+
+
+
+    #titulo-redes div {
+        font-size: 50px;
+        text-decoration: none;
+        padding: 10px;
+        display: flex;
+        flex-flow: wrap;   
+        flex-direction: row-reverse;
+    }
+        #redesociales a img {
+            
+            text-decoration: none;
+            height: 50px;
+            padding: 5px;
+            margin: 10px;
+            transition: all 2s ease-in-out;
+
+            a img :hover {
+                transform: skewY(20deg);
+            
+            }
+            
+        }
+        
+        
+
+    
+    
+
+        #dondecontrarnos iframe {
+            display: flex;
+            background-color: rgba(226, 24, 24, 0.5);
+            }
+                
+    

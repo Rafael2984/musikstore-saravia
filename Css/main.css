@@ -17,7 +17,7 @@ h1{
     margin: 5px;
     height: 150px;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     
     
 }
@@ -40,6 +40,7 @@ li {
     
 }
 
+
 header nav  { 
     
     background:rgba(211, 66, 109, 0.61);
@@ -49,7 +50,7 @@ header nav  {
     }
 
 
-nav li a:hover {
+header .nav-item:hover {
     background: #ccc;
     color: black;
     
@@ -99,7 +100,6 @@ a {
 }
 #marcastitulos{
     padding: 10px;
-   
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -184,7 +184,6 @@ body {
     display: grid;
     grid-template-areas: 
     "header header header"
-    "nav nav nav"
     "main main main"
     "main main footer"
     "footer footer footer"
@@ -233,7 +232,12 @@ h2 {
     "tabla tabla tabla"
     "sonido sonido sonido"
     ;
+
+    
 }
+
+
+    
 
 #navegadorg {
     grid-area: navegadorg;
@@ -286,9 +290,31 @@ h2 {
     
     }
 
-    @media screen and(max-width:800px) {
+    .carouselslide{
+
+        margin-top: 10px;
+    }
+
+    .carouselslide img {
+
+        height: 65vh;
+    }
+    
+    
+    
+    @media (max-width:768px) {
+
         body {
-            background: #ff8000;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "main main main"
+            "main main footer"
+            "footer footer footer"
         }
         
     }
+    
+    
+    
+    
