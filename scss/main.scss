@@ -8,16 +8,14 @@
     max-width: 132em;
 }
 
-#marcas h2 {
+#marcas h2 {  
     padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 
-    #marcas {
-        background-color: rgba(204, 204, 204, 0.5);
-        margin: auto;
-        height: 30em;
+    background-color: rgba(204, 204, 204, 0.5);
+    height: 30em;
         display: grid;
         grid-template-columns: auto;
         align-items: center;   
@@ -25,10 +23,12 @@
         
     }
 
- }
+ 
 
-  #marcastitulos{
-        padding: 10px;
+    #marcastitulos{
+        padding: 50px;
+        margin: 10px;
+        height: 150px;
         display: flex;
         flex-direction: row;
         align-items: stretch;
@@ -45,7 +45,7 @@
 #quienes-somos {
     background-color: rgb(252, 247, 247);
     border: solid 5px rgba(192, 192, 192, 0.473);
-    padding: 10px;
+    padding: 20px;
     margin: 3px;
     height: 50vh;
     display: flex;
@@ -72,33 +72,16 @@
 
 
     #nuestroartista {
-        padding: 10px;
-        margin: 10px;
+        padding: 20px;
+        margin: 20px;
     }
     
 }
 
-//guitarras-acusticas-bajos//
 
-
-#sonido {
-
-    background-color: rgb(141, 156, 4);
-    padding: 5px;
-    border: solid 1px burlywood;
-}
-
-#parrafo {
-    padding: 10px;
-        background-color: lavender;
-}
-
-#tarjetas {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    padding: 10px;
-    
+    @media screen and (min-width: 768px) {
+        body {
+                background-color: #000000;
+          }
     }
+    
