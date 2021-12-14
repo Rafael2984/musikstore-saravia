@@ -1,68 +1,24 @@
-#banner img {
-  width: auto;
-  height: auto;
-  max-height: 70em;
-  max-width: 132em; }
+a :hover {
+  transform: translate(10px, 20px); }
 
-#marcas h2 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; }
-  #marcas h2 #marcas {
-    background-color: rgba(204, 204, 204, 0.5);
-    margin: auto;
-    height: 30em;
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center; }
-
-#marcastitulos {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-evenly; }
-  #marcastitulos a :hover {
-    transform: translate(10px, 20px); }
-
-#quienes-somos {
+#quienessomos {
   background-color: #fcf7f7;
   border: solid 5px rgba(192, 192, 192, 0.473);
-  padding: 10px;
-  margin: 3px;
-  height: 50vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly; }
-  #quienes-somos p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2em;
-    font-weight: 900;
-    text-align: left; }
+  padding: 60px; }
 
-#tituloytexto {
-  width: 30%;
-  text-align: justify; }
-  #tituloytexto #nuestroartista {
-    padding: 10px;
-    margin: 10px; }
+#nuestroartista {
+  background-color: #dc3545;
+  padding: 1px;
+  margin: 1px; }
+  #nuestroartista iframe {
+    background-color: #dc3545;
+    padding: 10px; }
 
-#sonido {
-  background-color: #8d9c04;
-  padding: 5px;
-  border: solid 1px burlywood; }
-
-#parrafo {
-  padding: 10px;
-  background-color: lavender; }
-
-#tarjetas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-evenly;
-  padding: 10px; }
+@media screen and (max-width: 360px) {
+  #marcas {
+    box-sizing: content-box; }
+  #quienessomos {
+    width: 100%; } }
 
 #titulo-redes div {
   font-size: 50px;
@@ -85,6 +41,25 @@
   display: flex;
   background-color: rgba(226, 24, 24, 0.5); }
 
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; } }
+
+#parrafo {
+  padding: 10px;
+  background-color: lavender; }
+
+#tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 10px; }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #000000; } }
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1em;
@@ -97,7 +72,7 @@ h1 {
   font-size: 100px;
   background: rgba(160, 64, 64, 0.521);
   padding: 20px;
-  margin: 5px;
+  margin: 1px;
   height: 150px;
   display: flex;
   justify-content: right; }
@@ -124,12 +99,11 @@ header {
   list-style: none;
   text-decoration: none; }
 
-a .nav-item:hover {
+ul .nav-item:hover {
   background: #ccc;
   color: black; }
 
-#banner img {
-  width: auto;
-  height: auto;
-  max-height: 70em;
-  max-width: 132em; }
+@media screen and (max-width: 768px) {
+  h1 {
+    display: block;
+    font-size: medium; } }
