@@ -37,10 +37,6 @@ a :hover {
   #redesociales a img a img :hover {
     transform: skewY(20deg); }
 
-#dondecontrarnos iframe {
-  display: flex;
-  background-color: rgba(226, 24, 24, 0.5); }
-
 @media screen and (max-width: 768px) {
   footer {
     grid-template-areas: "header header header" "main main main" "footer footer footer"; } }
@@ -52,9 +48,16 @@ a :hover {
 #tarjetas {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   justify-content: space-evenly;
   padding: 10px; }
+
+.tituloaccesorios {
+  background-color: #ffffff;
+  padding: 40px 10px 0px 50px;
+  margin: top; }
+
+#bannermarcas {
+  padding: 5px 0px; }
 
 @media screen and (min-width: 768px) {
   body {
@@ -79,9 +82,9 @@ h1 {
 
 li {
   background-color: chocolate;
-  width: 300px;
+  width: 200px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 500;
   display: flex;
   flex-direction: row;

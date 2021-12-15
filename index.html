@@ -27,22 +27,23 @@
 
     
         
-        <h1 class="text-center bg-light"> Music Store </h1>
+        <h1 class="container-fluid text-center bg-light"> Music Store </h1>
 
         <!--Navegador-->
-
-        <header class="d-flex flex-wrap justify-content-center  mb-4 border-bottom bg-danger col-xs-2 col-md-2 col-lg-12">
+        
+        <header class="d-flex flex-wrap justify-content-center container-fluid  mb-4 border-bottom bg-danger col-xs-2 col-md-2 col-lg-12">
+          
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none ">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
               <span class="fs-4 "><img src="pages/logoms.png" alt="Logo" width="80"></span>
             </a>
       
             <ul class="nav nav-pills">
-              <li class="nav-item"><a href="index.html"  class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="Guitarras.html" class="nav-link">Guitarras</a></li>
-          <li class="nav-item"><a href="Acusitcas.html" class="nav-link">Acusticas</a></li>
-          <li class="nav-item"><a href="Bajos.html" class="nav-link">Bajos</a></li>
-          <li class="nav-item"><a href="Accesorios.html" class="nav-link">Accesorios</a></li>
+              <li class="nav-item"><a href="index.html"  class="nav-link text-dark">Home</a></li>
+              <li class="nav-item"><a href="Pages/Guitarras.html" class="nav-link text-dark">Guitarras</a></li>
+          <li class="nav-item"><a href="Pages/Acusitcas.html" class="nav-link text-dark">Acusticas</a></li>
+          <li class="nav-item"><a href="Pages/Bajos.html" class="nav-link text-dark">Bajos</a></li>
+          <li class="nav-item"><a href="Pages/Accesorios.html" class="nav-link text-dark">Accesorios</a></li>
         </ul>
           </header>
         
@@ -57,27 +58,33 @@
 
 <!--Secciones y contenido-->
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel ">
-        <div class="carousel-inner ">
-          <div class="carousel-item active">
-            <img src="Pages/robert.jpg" class="d-block w-100" alt="robert">
-          </div>
-          <div class="carousel-item">
-            <img src="Pages/jhonn5.jpg" class="d-block w-100" alt="jhonn">
-          </div>
-          <div class="carousel-item">
-            <img src="Pages/tom.jpg" class="d-block w-100" alt="tom">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+<div class="conainer">
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel ">
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="Pages/robert.jpg" class="d-block w-100" alt="robert">
       </div>
+      <div class="carousel-item">
+        <img src="Pages/jhonn5.jpg" class="d-block w-100" alt="jhonn">
+      </div>
+      <div class="carousel-item">
+        <img src="Pages/tom.jpg" class="d-block w-100" alt="tom">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+    
 
 
 
@@ -105,17 +112,26 @@
 <!--seccion 2-->
     
     
-    <div id="quienessomos" > 
-
-      <h4 class="text-center">QUIENES SOMOS</h4>
-        
-      <img src="pages/local.jpg" class="img-fluid" width="500" alt="local">
-
-  
     
-      <p> Somos una empresa profesional, desde 1991 asesorando musicos, profesionales y principiantes. tenemos todo tipo de instrumentos calidad, gamas altas, intermedias y bajas, nos representan los mejores artistas del medio.</p>
- 
 
+
+  <div class="clearfix bg-light">
+
+    <h4 class="text-center">QUIENES SOMOS</h4>
+
+    <img src="Pages/local.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
+  
+    <p>
+      Somos una empresa profesional, desde 1991 asesorando musicos, profesionales y principiantes. tenemos todo tipo de instrumentos calidad, gamas altas, intermedias y bajas, nos representan los mejores artistas del medio.
+    </p>
+  
+    <p>
+      Trabajando con marcas de primera calidad, contamos con las instalaciones adecuadas para la prueba de instrumentos con salas insonorizadas.
+    </p>
+  
+    <p>
+      Te brindamos el mejor asesoramiento, en la materia, contamos con la experiencia y los conocimientos necesarios para brindarte una buena atencion.
+    </p>
   </div>
 
     <div id="nuestroartista" > 
